@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Body
 from models.books import Book
 
 app = FastAPI()
@@ -49,6 +49,14 @@ BOOKS = [
 ]
 
 
-@app.get("/api/v1/books")
+@app.get("/api/v1/books", tags=["books"])
 async def get_all_books():
     return BOOKS
+
+
+@app.post("/api/v1/create-book", tags=["books"])
+def adding_book(book_request=Body()):
+    if not book_request:
+        return {"Message": "You need to enter the data of the book to be entered."}
+    
+    BOOKS.append(book_request)
