@@ -14,4 +14,8 @@ Este proyecto se encuentra basado en un [curso de FastAPI]() donde aplico lo apr
 
 Se recomienda tener instalado Pixi para poder correr el proyecto, en caso contrario te dejaré un requirements para que puedas realizar la instalación de las dependencias por tu cuenta.
 
+Para instalar dependencias del proyecto usando Pixi, haremos lo siguiente:
 
+```bash
+pixi install
+```
