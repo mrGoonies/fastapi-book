@@ -1,0 +1,15 @@
+[project]
+name = "book_v2"
+version = "0.1.0"
+description = "Proyecto de practica sobre el framework FastAPI"
+authors = ["mrGoonies <gooniesdev@gmail.com>"]
+channels = ["conda-forge"]
+platforms = ["linux-64"]
+
+[tasks]
+dev = "uvicorn main:app"
+
+[dependencies]
+fastapi = ">=0.110.0,<0.111"
+uvicorn = ">=0.27.1,<0.28"
+ruff = ">=0.3.0,<0.4"
