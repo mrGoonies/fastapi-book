@@ -19,3 +19,22 @@ Para instalar dependencias del proyecto usando Pixi, haremos lo siguiente:
 ```bash
 pixi install
 ```
+
+## Ejecutar proyecto
+En caso de que no te encuentres utilizando *Pixi* y hayas instalado las dependencias del proyecto. Te recomiendo utilizar el siguiente comando para inicializar el servidor:
+
+```bash
+uvicorn main:app
+```
+
+Si quieres ver la documentación de las diferentes APIs debes acceder a la siguiente ruta:
+
+```
+http://127.0.0.1:8000/docs
+```
+
+En caso contrario para ejecutar la app con *Pixi*:
+
+```bash
+pixi run dev
+```
